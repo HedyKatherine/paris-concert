@@ -7,6 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="assets/css/style.css">
+ 
   <title>Paris Concert</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
   <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
     <!-- to move text from edge of screen instead of adding padding -->
     <div class="container">
-        <a href="#" class="navbar-brand" ><img class="logoParisConcert" src="./assets/images/logo-paris-concert-wo-bkgd.png"></a>
+        <a href="#" class="navbar-brand" ><img class="logoParisConcert" src="assets/images/logo-paris-concert-wo-bkgd.png"></a>
         <!-- hamburger menu button targeting div collapse with id of navmenu -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
             <span class="navbar-toggler-icon"></span>
@@ -65,23 +66,12 @@
           <button class="btn btn-primary btn-lg">Valider</button>
         </div>
         <!-- to keep img inside container w-50 to make img 50% -->
-        <img class="img-fluid w-50 d-none d-sm-block" src="assets/images/development.svg" alt="illustration of person on computer and a web interface">
+        <img class="img-fluid w-50 d-none d-sm-block" src="assets/images/imgAccueil.jpg" alt="illustration of person on computer and a web interface">
       </div>
     </div>
   </section>
   <!-- end of first section beginning of second section -->
-  <section class="bg-dark text-light p-5 text-center text-sm-start">
-    <div class="container">
-      <div class="d-md-flex justify-content-between align-items-center">
-        <h3 class="mb-3 mb-md-0">Descriptif de la cie</h3>
-
-        <div class="input-group email-input">
-          <input type="text" class="form-control" placeholder="adresse e-mail" aria-label="Recipient's e-mail address" aria-describedby="button-addon2">
-          <button class="btn btn-outline-secondary btn-lg" type="button" id="button-addon2">Valider</button>
-        </div>
-      </div>
-    </div>
-  </section>
+  
   <!-- Boxes with grid -->
   <section class="p-5">
     <div class="container">
@@ -168,25 +158,180 @@
   <section id="experience" class="p-5 bg-dark text-light">
     <div class="container">
       <div class="row align-items-center justify-content-between">
-        <!-- for content after image first is h2 then p.lead then p and link formatted as button and icon -->
-        <div class="col-md p-5">
-          <h2>Agir ensemble</h2>
-          <p class="lead">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid in eligendi doloribus ut, nulla similique.
-          </p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, dolor, commodi. Repudiandae doloremque, animi, dolore est sed, iste officiis dolorem ut corrupti omnis nihil. Minus, explicabo, rerum! Possimus enim, adipisci.</p>
-          <!-- mt to push button link down -->
-          <a href="#" class="btn btn-light mt-3">
-            <i class="bi bi-chevron-right"></i> En savoir plus
-          </a>
+
+
+
+        <div class="dark">
+          <main class="container py-4">
+            <h2 class="text-center" id="show">Les Spectacles</h2>
+            <br>
+            <article class="postcard dark blue">
+              <a class="postcard__img_link" href="#">
+                <img class="postcard__img" src="assets/images/AMgants.jpg" alt="photo d'une danceuse" />
+              </a>
+              <div class="postcard__text">
+                <h1 class="postcard__title blue"><a href="#">&nbsp;L'amour, c'est magique</a></h1>
+                <div class="postcard__subtitle small">
+                  <time datetime="2020-05-25 12:00:00">
+                    <i class="fas fa-calendar-alt mr-2"></i>&nbsp; Date à ajouter
+                  </time>
+                </div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">
+                  <p>&nbsp;Spectacle de théâtre musical tout public avec magie, chansons originales et acrobatie aérienne</p>
+                  <p>&nbsp; Ecrit et mis en scène par Hervé Haine<br>
+                    &nbsp; Avec Hélène Famin,Tonio Matias et Marie-Anne Trân
+                    &nbsp; Costumes : Myriam Drosne<br>
+                    &nbsp; Lumières: Boris Bourdet <br>
+                    &nbsp; Chansons originales: Hervé Haine et Tonio Matias</p>
+                  </div>
+                <ul class="postcard__tagbox">
+                  <li class="tag__item"><i class="fas fa-tag mr-2"></i>En savoir plus</li>
+                  <li class="tag__item"><a href="https://743fd2dd-9587-4ec5-97a7-c2cc5a19c6d2.usrfiles.com/ugd/743fd2_dae8fa81108d4132a18481b75a89b1a6.pdf"></a><i class="fas fa-clock mr-2"></i>Dossier de presse</li>
+                  <li class="tag__item play blue">
+                    <a href="https://youtu.be/ZyaVBheGhtU"><i class="fas fa-play mr-2"></i>Extrait video</a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <article class="postcard dark red">
+              <a class="postcard__img_link" href="#">
+                <img class="postcard__img" src="assets/images/dansegroupe.jpeg" alt="danse de groupe" />	
+              </a>
+              <div class="postcard__text">
+                <h1 class="postcard__title red"><a href="#">Dis, quand reviendras tu?</a></h1>
+                <div class="postcard__subtitle small">
+                  <time datetime="2020-05-25 12:00:00">
+                    <i class="fas fa-calendar-alt mr-2"></i>Date à ajouter
+                  </time>
+                </div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">Au célèbre cabaret du « Dis quand reviendras-tu.. », nos chanteurs ont revêtu le costume de lumière de nos plus beaux interprètes, ceux qui ont créé la légende…Nimbés de leur aura, ils nous feront revivre les plus beaux moments de la chanson des dernières décennies celle qui magnifique, nous émerveille le cœur, écarquille les yeux et les oreilles.
+
+                  Passant du répertoire de la grande chanson française à celui plus léger de la chanson dite de variété, nos protagonistes vous entraîneront dans leur univers foutraque et vous les découvrirez tels que vous ne les avez jamais imaginés… même en rêve. Leur foi n’a d’égale que l’envie de vous faire vibrer, chanter et danser avec eux !</div>
+                <ul class="postcard__tagbox">
+                  <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+                  <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+                  <li class="tag__item play red">
+                    <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <article class="postcard dark green">
+              <a class="postcard__img_link" href="#">
+                <img class="postcard__img" src="assets/images/pianiste.jpeg" alt="Danse groupe femme" />
+              </a>
+              <div class="postcard__text">
+                <h1 class="postcard__title green"><a href="#">Cami Concert</a></h1>
+                <div class="postcard__subtitle small">
+                  <time datetime="2020-05-25 12:00:00">
+                    <i class="fas fa-calendar-alt mr-2"></i>Date à ajouter
+                  </time>
+                </div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">
+                  « Un exquis mâle, des exquis mots »
+                   
+                  
+                  A l’issue d’une audition rocambolesque, deux femmes se retrouvent enfermées dans un théâtre. Des fantômes apparaissent, un brin de sexe, une pincée de dérision, un soupçon d’angoisse et de l’exotisme au kilo !
+                  
+                  Pascal Turbet a mis le tout en musique : une marche joyeusement funèbre «  Si les squelettes avaient une bistoquette » ou bien « Une valse pas assez » pour une cantatrice s’inquiétant de ce qu’on fustige les carpettes. Pastiche et clins d’œil sont à l’honneur.
+                  
+                   
+                  
+                  Avec la complicité d’Evelyne Pérard, metteur en scène, le duo burlesque (Marie Ann Trân et Valérie Lanoir) prend forme : les demoiselles de Rochefort croisent le comique troupier, la pianiste décoince, et la chanteuse divague….Le tour est joué et en avant la musique !
+                  
+                  Pierre-Henri Cami né à Pau en 1884 et mort à paris en 1958, fut un humoriste à vocation populaire extrêmement célèbre.
+                  
+                  Parmi la foule de ses admirateurs appelés les « Camisards », citons Jacques Prévert qui parla « d’une logique implacable comme un œuf de piano dans la cervelle d’une poule » et Charlie Chaplin qui le considérait comme « le plus grand humoriste in the world ! »</div>
+                <ul class="postcard__tagbox">
+                  <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+                  <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+                  <li class="tag__item play green">
+                    <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <article class="postcard dark yellow">
+              <a class="postcard__img_link" href="#">
+                <img class="postcard__img" src="assets/images/dansefemmes.jpeg" alt="Image Title" />
+              </a>
+              <div class="postcard__text">
+                <h1 class="postcard__title yellow"><a href="#">Conte vietnamien</a></h1>
+                <div class="postcard__subtitle small">
+                  <time datetime="2020-05-25 12:00:00">
+                    <i class="fas fa-calendar-alt mr-2"></i>Date à ajouter
+                  </time>
+                </div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">Florilège de contes traditionnels en musique
+                  pour partir à la découverte de ce beau pays – le Vietnam.
+                  
+                  Ce spectacle tout public, conté et chanté au son de flûtes et  percussions vietnamiennes, invite au voyage et au rêve.
+                  Conte et chant : MARIE ANN TRAN
+                  
+                  Musique et texte : THANH NAM MAI</div>
+                <ul class="postcard__tagbox">
+                  <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+                  <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+                  <li class="tag__item play yellow">
+                    <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </main>
         </div>
-        <div class="col-md">
-          <img class="img-fluid" src="assets/images/logic.svg" alt="illustration of people with icons of HTML, CSS, and JavaScript">
-        </div>
+
       </div>
     </div>
   </section>
   <!-- Centres d'intérêt accordion end of fourth section beginning of fifth section -->
+
+
+  <section id="hobbies" class="p-5">
+    <div class="container">
+      <h2 class="text-center mb-4"></h2>
+      <h2 class="text-center" id="show">Projet à venir</h2>
+      <br>
+      <div class="accordion accordion-flush" id="hobby">
+     
+
+        <article class="postcard dark blue">
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="assets/images/lefilsdudragon.jpg" alt="photo fils du dragon" />
+          </a>
+          <div class="postcard__text">
+            <h2 class="postcard__title blue"><a href="#">Le fils du dragon (Le retour)</a></h2>
+            <div class="postcard__subtitle small">
+              <time datetime="2020-05-25 12:00:00">
+                <i class="fas fa-calendar-alt mr-2"></i>&nbsp; 2021
+              </time>
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">
+              Un spectacle puzzle et multi-facettes - théâtral, visuel et musical - mettant en forme la quête que Marie Ann Trân, artiste pluridisciplinaire, a entrepris sur les origines de sa famille, native du Sud Vietnam et l’implantation de celle-ci, ici, en banlieue parisienne. Celle-ci écrite à partir de témoignages réels, est réinventée et recomposée en une forme hybride oscillant entre le rêve et la réalité par l’écrivain Cédric Bonfils.
+              "Dans cette en-quête, à la fois questionnement collectif et recherche introspective, les fantômes du passé viendront aussi prendre la parole. Ceci nous portera, à travers l’histoire de l’exil de mes parents et de ce qu’elle provoqua dans notre fratrie, à évoquer cette partie encore enfouie de la mémoire collective : celle de la colonisation française en Indochine." Marie Ann Trân.
+              
+              
+              </div>
+            <ul class="postcard__tagbox">
+              <li class="tag__item"><i class="fas fa-tag mr-2"></i>En savoir plus</li>
+              <li class="tag__item"><a href="https://743fd2dd-9587-4ec5-97a7-c2cc5a19c6d2.usrfiles.com/ugd/743fd2_dae8fa81108d4132a18481b75a89b1a6.pdf"></a><i class="fas fa-clock mr-2"></i>Dossier de presse</li>
+              <li class="tag__item play blue">
+                <a href="https://youtu.be/ZyaVBheGhtU"><i class="fas fa-play mr-2"></i>Extrait video</a>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+  <!-- TODO: finish up accordion description text -->
+
   <section id="hobbies" class="p-5">
     <div class="container">
       <h2 class="text-center mb-4">texte ici</h2>
@@ -322,5 +467,6 @@
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
 </body>
 </html>
