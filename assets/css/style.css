@@ -6,7 +6,6 @@ body::before {
   margin: auto;
 }
 
-
 .bandeau {
   width: 100%;
   height: 840px;
@@ -50,6 +49,16 @@ div.fill ul li a:hover:after {
   -moz-animation: fill 1s forwards;
   opacity: 1;
 }
+
+.espace1{
+  width: 100%;
+  height: 6000px;
+}
+h1{
+  color: red;
+}
+
+
 /* to reduce size of input until medium breakpoint */
 @media(min-width: 768px) {
   .email-input {
