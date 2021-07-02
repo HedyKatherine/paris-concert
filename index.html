@@ -15,35 +15,49 @@
   <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
     <!-- to move text from edge of screen instead of adding padding -->
     <div class="container">
-      <a href="#" class="navbar-brand">Paris Concert</a>
-      <!-- hamburger menu button targeting div collapse with id of navmenu -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- to collapse on smaller screens -->
-      <div class="collapse navbar-collapse" id="navmenu">
-        <!-- ms-auto margin start auto to align right -->
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a href="#study" class="nav-link">Qui sommes-nous ?</a>
-          </li>
-          <li class="nav-item">
-            <a href="#experience" class="nav-link">Spectacles</a>
-          </li>
-          <li class="nav-item">
-            <a href="#hobbies" class="nav-link">Agir ensemble</a>
-          </li>
-        </ul>
-      </div>
+        <a href="#" class="navbar-brand" ><img class="logoParisConcert" src="./assets/images/logo-paris-concert-wo-bkgd.png"></a>
+        <!-- hamburger menu button targeting div collapse with id of navmenu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- to collapse on smaller screens -->
+        <div class="fill collapse navbar-collapse" id="navmenu">
+         
+            <!-- ms-auto margin start auto to align right -->
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="#weAre" class="nav-link ">Qui sommes-nous ?</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#show" class="nav-link ">Spectacles</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link ">Projets à venir</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#workTogether" class="nav-link">Agir ensemble</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </nav>
+</nav>
+
+<div class="bandeau container-fluid col-12 pr-0 mt-5">
+<div class="titre ">
+    <h1 class="display-2" data-aos="fade-right"></h1>
+    <h2 class="display-4"data-aos="fade-left"></h2>
+</div>
+</div>
   <!-- end of nav and beginning of section starting at small breakpoint align txt at start left-->
   <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
     <div class="container">
       <!-- for flexbox on following div and h1 sm class so no flex display until it hits sm breakpoint -->
       <!-- align items on horizontal -->
       <div class="d-sm-flex align-items-center justify-content-between">
-        <div class="">
+        <div id="">
           <h1>Equipe<span class="text-primary"> Web </span></h1>
           <!-- lead class to make text bigger and my for margin on y-axis -->
           <p class="lead my-4">
