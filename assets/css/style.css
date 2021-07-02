@@ -3,8 +3,53 @@ body::before {
   display: block;
   content: '';
   height: 60px;
+  margin: auto;
 }
 
+
+.bandeau {
+  width: 100%;
+  height: 840px;
+  background-image: url(/assets/images/imgAccueil.jpg);
+  background-size: cover;
+  background-position: center;
+  }
+  
+/*Texte animé*/
+.titre {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  }
+
+.logoParisConcert {
+  width: 150px;
+}
+
+div.fill ul li a {
+  transition: all 2s;
+}
+
+div.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+div.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+div.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
 /* to reduce size of input until medium breakpoint */
 @media(min-width: 768px) {
   .email-input {
