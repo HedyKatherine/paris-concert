@@ -12,7 +12,7 @@
 </head>
 <body>
   <!-- py-3 padding on y-axis of 3 and nav fixed to top -->
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-4 fixed-top">
     <!-- to move text from edge of screen instead of adding padding -->
     <div class="container">
         <a href="#" class="navbar-brand" ><img class="logoParisConcert" src="./assets/images/logo-paris-concert-wo-bkgd.png"></a>
@@ -45,8 +45,8 @@
     </div>
 </nav>
 
-<div class="bandeau container-fluid col-12 pr-0 mt-5">
-<div class="titre ">
+<div class="bandeau container-fluid col-12 pr-0 mt-3">
+<div class="titre">
     <h1 class="display-2" data-aos="fade-right"></h1>
     <h2 class="display-4"data-aos="fade-left"></h2>
 </div>
@@ -54,11 +54,11 @@
   <!-- end of nav and beginning of section starting at small breakpoint align txt at start left-->
 
   <!-- end of first section beginning of second section -->
-  <section id="study" class="p-5">
+  <section id="weAre" class="p-5">
     <div class="container">
       <div class="row align-items-center justify-content-between">
         <div class="col-md">
-          <img class="img-fluid" src="assets/images/imgParisConcert.jpg" alt="Image de Paris Concert">
+          <img class="img-fluid" id="enfantDeLaLune" src="assets/images/Enfants de la lune.jpg" alt="Image de Paris Concert">
         </div>
         <!-- for content after image first is h2 then p.lead then p and link formatted as button and icon -->
         <div class="col-md pt-5">
@@ -88,7 +88,7 @@
               <img id="photoMarieAnn" src="assets/images/Bio.jpg" class="rounded-circle mb-3" alt="">
               <h3 class="card-title mb-3">Marie Ann</h3>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas consequuntur maxime dicta facilis, corporis hic!</p>
-              <a href="#"><i class="bi bi-people-fill mx-1"></i></a>
+              <a href="#"><i class="bi bi-people-fill mx-1 text-danger"></i></a>
             </div>
           </div>
         </div>
@@ -99,7 +99,7 @@
               <img id="photoMyriam" src="assets/images/cv-myriam.jpg" class="rounded-circle mb-3" alt="">
               <h3 class="card-title mb-3">Myriam</h3>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas consequuntur maxime dicta facilis, corporis hic!</p>
-              <a href="#"><i class="bi bi-people-fill mx-1"></i></a>
+              <a href="#"><i class="bi bi-people-fill mx-1 text-danger"></i></a>
             </div>
           </div>
         </div>
@@ -110,7 +110,7 @@
               <img id="photoMyriam" src="assets/images/cv-chesco.jpg" class="rounded-circle mb-3" alt="">
               <h3 class="card-title mb-3">Benoit</h3>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas consequuntur maxime dicta facilis, corporis hic!</p>
-              <a href="#"><i class="bi bi-people-fill mx-1"></i></a>
+              <a href="#"><i class="bi bi-people-fill mx-1 text-danger"></i></a>
             </div>
           </div>
         </div>
@@ -122,12 +122,12 @@
   <!-- end of second section start third section -->
 
   <!-- end of third section beginning of fourth section -->
-  <section id="experience" class="p-5 bg-dark text-light">
+  <section id="show" class="p-5 bg-dark text-light">
     <div class="container">
       <div class="row align-items-center justify-content-between">
 
         <div class="dark">
-          <main class="container py-4">
+          <main class="container py-5 md-12">
             <h2 class="text-center" id="show">Les Spectacles</h2>
             <br>
             <article class="postcard dark blue">
@@ -246,17 +246,16 @@
             </article>
           </main>
         </div>
-
       </div>
     </div>
   </section>
   <!-- Centres d'intérêt accordion end of fourth section beginning of fifth section -->
-
-
-  <section id="hobbies" class="p-5">
+  <h2> </h2>
+  <section id="projects" class="p-5">
     <div class="container">
       <h2 class="text-center mb-4"></h2>
-      <h2 class="text-center" id="show">Projet à venir</h2>
+      
+      <h2 id="projetsavenir" class="text-center">Projet à venir</h2>
       <br>
       <div class="accordion accordion-flush" id="hobby">
      
@@ -282,9 +281,10 @@
             <ul class="postcard__tagbox">
               <li class="tag__item"><i class="fas fa-tag mr-2"></i>En savoir plus</li>
               <li class="tag__item"><a href="https://743fd2dd-9587-4ec5-97a7-c2cc5a19c6d2.usrfiles.com/ugd/743fd2_dae8fa81108d4132a18481b75a89b1a6.pdf"></a><i class="fas fa-clock mr-2"></i>Dossier de presse</li>
-              <li class="tag__item play blue">
+              <li  class="tag__item play blue">
                 <a href="https://youtu.be/ZyaVBheGhtU"><i class="fas fa-play mr-2"></i>Extrait video</a>
               </li>
+              
             </ul>
           </div>
         </article>
@@ -294,9 +294,9 @@
   </section>
   <!-- TODO: finish up accordion description text -->
 
-  <section id="hobbies" class="p-5 bg-dark text-light">
+  <section id="workTogether" class="p-5 bg-dark text-light">
     <div class="container">
-      <h2 class="text-center mb-4">Agir Ensemble</h2>
+      <h2 id="agirEnsemble" class="text-center mb-4">Agir Ensemble</h2>
       <div class="accordion accordion-flush" id="hobby">
         <!-- first accordion item -->
         <div class="accordion-item">
@@ -306,7 +306,7 @@
             </button>
           </h2>
           <div id="hobby-one" class="accordion-collapse collapse" aria-labelledby="hobby-one" data-bs-parent="#hobby">
-            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, eaque suscipit. Iste beatae qui voluptatibus.
+            <div class="accordion-body text-dark"><img id="photoAction" src="assets/images/photo action.jpg"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, eaque suscipit. Iste beatae qui voluptatibus.
             </div>
           </div>
         </div>
@@ -318,7 +318,7 @@
             </button>
           </h2>
           <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#hobby">
-            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, consequuntur?
+            <div class="accordion-body text-dark"><img id="photoAction" src="assets/images/L'amour dans tous ses états.jpg"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, consequuntur?
             </div>
           </div>
         </div>
@@ -330,17 +330,31 @@
             </button>
           </h2>
           <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#hobby">
-            <div class="accordion-body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi magnam officiis ullam repudiandae aliquid quo, nemo laudantium doloremque voluptas dolores.
+            <div class="accordion-body text-dark"><img id="photoAction" src="assets/images/atelierPhoto.jpg"> 
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi magnam officiis ullam repudiandae aliquid quo.
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="container text-center mb-4 mt-5">
+      <h2 class="pb-4">Nos partenaires</h2>
+      <div>
+        <a href="https://www.mairie-orly.fr/Temps-libre/Culture/Centre-culturel-Aragon-Triolet/Programmation"><img class="logoPartenaires" src="assets/logos/logo cculturel orly.jpg"></a>
+        <a href=""><img class="logoPartenaires" src="assets/logos/logo cget.jpg"></a>
+        <a href=""><img class="logoPartenaires" src="assets/logos/logo choisy.jpg"></a>
+        <a href=""><img class="logoPartenaires" src="assets/logos/logo drac.jpg"></a>
+        <a href=""><img class="logoPartenaires" src="assets/logos/logo fondation sncf.jpg"></a>
+        <a href=""><img class="logoPartenaires" src="assets/logos/logo fondfeuilhade.jpg"></a>
+        <a href=""><img class="logoPartenaires" src="assets/logos/logo idf.jpg"></a>
+
+        
+      </div>
+    </div>
   </section>
 
   <!-- Contact infos & map -->
-  <section class="p-5">
+  <section class="p-5" id="contact">
     <div class="container">
       <div class="row g-4">
         <div class="col-md">
@@ -366,11 +380,11 @@
     </div>
   </section>
   <!-- Footer -->
-  <footer class="p-5 bg-dark text-white text-center positon-relative">
+  <footer class="p-5 bg-dark text-white text-center position-relative">
     <div class="container">
       <p class="lead">Copyright &copy; 2021 Cie Paris Concert</p>
       <a href="#" class="position-absolute bottom-0 end-0 p-5">
-          <i class="bi bi-arrow-up-circle h1"></i>
+          <i class="bi bi-arrow-up-circle text-light h1"></i>
         </a>
     </div>
   </footer>

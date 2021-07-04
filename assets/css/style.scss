@@ -18,12 +18,24 @@ body::before {
 
 .bandeau {
   width: 100%;
-  height: 840px;
+  height: 880px;
   background-image: url(/assets/images/imgAccueil.jpg), url(https://hedykatherine.github.io/paris-concert/assets/images/imgAccueil.jpg);
   background-size: cover;
   background-position: center;
   }
 
+  .logoParisConcert{
+    margin-top: -40px;
+    margin-left: -180px;
+    position:fixed;
+    overflow: visible;
+    z-index: 1;
+  }
+
+#enfantDeLaLune {
+  margin-top: 100px;
+  width: 70%;
+}  
 // Format des photos de l'équipe
 #photoMarieAnn{
   width: 128px;
@@ -386,4 +398,27 @@ body::before {
 			transparent 50%
 		);
 	}
+}
+
+#photoAction {
+  width: 30%;
+}
+
+#projects {
+  height: 900px;
+}
+#projetsavenir {
+  margin-top: 50px;
+}
+
+#workTogether {
+  height: 1000px;
+}
+
+#agirEnsemble {
+  margin-top: 30px;
+}
+
+.logoPartenaires {
+  width: 170px;
 }
